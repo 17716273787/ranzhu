@@ -1,9 +1,18 @@
-<bean id="myStudent" class="com.cxrg.Student">
+     <bean id="myStudent" class="com.cxrg.Student">
         <!--set注入方法-->
         <property name="name" value="张三"/>
         <property name="age" value="19"/>
+        <property name="school" ref="mySchool"/>
     </bean>
+    <!--引用数据类型需要用ref引入地址-->
+    <bean id="mySchool" class="com.cxrg.School">
+        <property name="name" value="成贤学院"/>
+        <property name="addr" value="东大路6号"/>
+    </bean>
+    
 /*
-   set注入调用的是set方法，会先调用set方法，再注入
+   set注入调用的是set方法，
+   spring会先利用无参构造创建对象，
+   再调用set方法进行注入
    没有set方法会报错
 */
