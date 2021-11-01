@@ -1,0 +1,5 @@
+<bean id="myStudent" class="com.cxrg.Student">
+        <!--set注入方法-->
+        <property name="name" value="张三"/>
+        <property name="age" value="19"/>
+    </bean>
