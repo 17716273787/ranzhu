@@ -3,3 +3,7 @@
         <property name="name" value="张三"/>
         <property name="age" value="19"/>
     </bean>
+/*
+   set注入调用的是set方法，会先调用set方法，再注入
+   没有set方法会报错
+*/
